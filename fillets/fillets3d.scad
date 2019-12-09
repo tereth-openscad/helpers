@@ -121,7 +121,7 @@ module bottomFillet(b = 0, r = 1, s = 4, e = 1) {
         render()
         difference() {
             children(0);
-            translate([0, 0, b - r - 1])
+            translate([0, 0, b - 1])
             linear_extrude(r + 1)
             offset(delta = 1e5)
             projection()
